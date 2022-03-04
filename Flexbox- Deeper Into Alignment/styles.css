@@ -1,0 +1,40 @@
+/* "align-self" allows you to target individual
+ items in the flex container */
+
+
+ /* Justify-content will align items on the main axis,
+ align-content will align items on the cross axis 
+ in order to use align-content, you have to have multiple rows,
+ so we will use flex-wrap to create them
+ -you can use all the same values as justify content*/
+
+
+.box{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 700px;
+    border: 2px solid rgb(96, 139, 168);
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+
+
+/* align-self takes all the same values that 
+align-items does, but now we can target it to individual flex items*/
+
+/* .box > div:first-child{
+    align-self: stretch;
+}
+
+.selected{
+    align-self: center;
+} */
+
+
+.box div{
+    height: 100px;
+    border: 2px solid lightblue;
+    border-radius: 5px;
+    background-color: rgba(96, 139, 168, .2);
+}

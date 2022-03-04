@@ -1,0 +1,58 @@
+.box{
+    display: flex;
+    flex-direction: row;
+
+
+    /* these are ways you can align items inside the container
+    -justify content moves along the main axis */
+    /* you could use flex-start, flex-end, center, 
+    space-around, space-between, and space-evenly*/
+    justify-content: flex-start;
+    
+
+    /* align-items will work along the cross-axis 
+    -again, you can use flex-start, flex-end, center, 
+    or stretch (which is the default)
+    -if you use stretch, it could be over ridden if you 
+    already specified an item height*/
+    align-items: center;
+
+
+
+    border: 2px solid rgb(96, 139, 168);
+    height: 500px;
+}
+
+.box div{
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgb(96, 139, 168);
+    border-radius: 5px;
+    background-color: rgba(96, 139, 168, .2);
+}
+
+/* you can add a flex wrap to wrap new content to the next line
+the default is "no wrap.
+the other values are wrap and wrap reverse, which adds content to
+the previous line on the axis */
+
+.box2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid green;
+    width: 500px;
+    flex-wrap: ;
+}
+
+/* in a flexbox, items can fit to shrink the container, 
+but they cant grow */
+
+.box2 div{
+    width: 200px;
+    height: 100px;
+    border: 2px solid green;
+    border-radius: 5px;
+    background-color: rgba(0, 160, 0, .2) ;
+}

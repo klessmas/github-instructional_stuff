@@ -1,0 +1,23 @@
+/* 
+-The default display direction of a flex container
+is row, right to left
+-The other values are: row-reverse, column, column-reverse 
+-when you use -revers, it flips the main axis
+-the "cross axis" the the opposite axis (eg column for row)
+-usually css is heavily weighted from left to right, top to bottom
+-in flex box its important to understand start line, end line,
+axis and cross axis*/
+
+.main{
+    display: flex;
+    flex-direction: row;
+    border: 2px dotted blue;
+}
+
+.main > div{
+    /* width: 75px;
+    height: 75px; */
+    background-color: #4a90e2;
+    color: white;
+    text-align: center;
+}

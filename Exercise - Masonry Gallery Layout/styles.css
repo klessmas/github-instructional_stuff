@@ -1,0 +1,99 @@
+body {
+  background-color: #525151;
+  box-sizing: border-box;
+}
+
+.grid {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  gap: 10px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+  grid-template-areas:
+    "let let let let moon moon wild wild pearl pearl pearl pearl"
+    "let let let let moon moon wild wild pearl pearl pearl pearl"
+    "let let let let moon moon national national nirvana dead dead dead"
+    "let let let let moon moon national national nirvana dead dead dead"
+    "let let let let moon moon national national beach beach beach beach"
+    "tiny tiny bridge bridge moon moon national national beach beach beach beach"
+    "tiny tiny crash crash moon moon national national beach beach beach beach"
+    "tiny tiny crash crash moon moon national national beach beach beach beach"
+    "tiny tiny crash crash sticky sticky sticky sticky beach beach beach beach"
+    "tay tay tay tay sticky sticky sticky sticky beach beach beach beach"
+    "tay tay tay tay sticky sticky sticky sticky cash cash cash cash"
+    "tay tay tay tay sticky sticky sticky sticky cash cash cash cash";
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.album {
+  background-color: ghostwhite;
+  border-radius: 5px;
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
+}
+
+.let {
+  grid-area: let;
+}
+
+.bridge {
+  grid-area: bridge;
+}
+
+.tiny {
+  grid-area: tiny;
+}
+
+.tay {
+  grid-area: tay;
+}
+
+.crash {
+  grid-area: crash;
+}
+
+.national {
+  grid-area: national;
+}
+
+.sticky {
+  grid-area: sticky;
+}
+
+.wild {
+  grid-area: wild;
+}
+
+.moon {
+  grid-area: moon;
+}
+
+.pearl {
+  grid-area: pearl;
+}
+
+.nirvana {
+  grid-area: nirvana;
+}
+
+.dead {
+  grid-area: dead;
+}
+
+.cash {
+  grid-area: cash;
+}
+
+.beach {
+  grid-area: beach;
+}

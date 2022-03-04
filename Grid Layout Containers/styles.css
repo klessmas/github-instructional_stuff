@@ -1,0 +1,66 @@
+.container {
+  color: ghostwhite;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; 
+    this is the same as below
+    you can set fr (fractions, or px, but it will be harder 
+    to plan for different screens*/
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 100px);
+  /* column-gap: 10px;
+    row-gap: 10px; 
+    or the short hand below
+    one value for all sides, or 2 for row and column*/
+  gap: 10px;
+  /* align items on the horizontal axis 
+    center, start, end, or default stretch*/
+  justify-items: center;
+  /* align items on the vertical axis 
+    center, start, end, or default stretch*/
+  align-items: center;
+  /* this is the short hand for both and I negated the centers
+    with the cascading order with place-items */
+  place-items: stretch;
+  /* if I had set the columns in grid-template-columns 
+    to 70px for example, this would move all the columns to the center.
+    can also use center, start, end, space-between (adds even space between 
+    columns with first and last all the way to the sides),space-around
+    (adds space evenly, but the first and last columns not at the ends,
+    and finally stretch which is the default*/
+  justify-content: stretch;
+}
+
+div div {
+  color: ghostwhite;
+  border: 1px solid darkgray;
+}
+
+.container-2 {
+  color: ghostwhite;
+  /* inline-grid differs from grid in that it is based on the content,
+    not the fraction or px */
+  display: inline-grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+  place-items: stretch;
+  justify-content: stretch;
+}
+
+.header {
+  background-color: yellowgreen;
+}
+
+.main {
+  background-color: orange;
+}
+
+.sidebar {
+  background-color: firebrick;
+}
+
+.footer {
+  background-color: cornflowerblue;
+}

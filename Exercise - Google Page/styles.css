@@ -1,0 +1,111 @@
+body {
+  font-family: Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+
+.bob {
+  width: 40px;
+  border-radius: 20px;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px 15px 0px 15px;
+}
+
+.side {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.middle {
+  display: flex;
+  flex-direction: row;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.icon,
+.input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.googleImg {
+  padding-top: 30px;
+  width: 400px;
+}
+
+div a {
+  text-decoration: none;
+  padding: 5px;
+  font-size: 13px;
+  color: rgb(49, 49, 49);
+}
+
+.side {
+  justify-self: flex-end;
+}
+
+.google {
+  padding: 0;
+}
+
+input {
+  width: 40%;
+  height: 40px;
+  border-radius: 20px;
+  padding: 0;
+  border: 1px solid rgb(49, 49, 49);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+button {
+  background-color: rgb(230, 230, 235);
+  height: 40px;
+  width: 140px;
+  margin: 15px 10px 15px 10px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.space {
+  padding: 0;
+  margin: 0;
+  height: 23rem;
+  width: 100%;
+}
+
+.footer {
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 5px 15px 0px 15px;
+}

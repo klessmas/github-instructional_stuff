@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+  background-color: #dedede;
+}
+
+.navbar {
+  background-color: ghostwhite;
+  padding: 10px;
+  text-align: right;
+  box-shadow: 0px -2px 7px #6db93a;
+  margin-bottom: 15px;
+}
+
+.navbar > a {
+  color: #6db93a;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+section {
+  padding: 10px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+section h2 {
+  text-align: center;
+  color: #6db93a;
+}
+
+hr {
+  margin-bottom: 25px;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  color: #6db93a;
+  gap: 10px;
+  justify-items: center;
+}
+
+.portfolio-item {
+  height: 150px;
+  width: 175px;
+  background-color: ghostwhite;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.portfolio-item:nth-child(even) {
+  background-color: transparent;
+  border: 2px solid #6db93a;
+  color: ghostwhite;
+}
+
+.contact-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "form form . fb twitter"
+    "form form . youtube ig";
+}
+
+.fb,
+.twitter,
+.youtube,
+.ig {
+  width: 175px;
+  height: 175px;
+  color: #6db93a;
+  text-align: center;
+  border: 1px solid #6db93a;
+  border-radius: 5px;
+  background-color: ghostwhite;
+}
+
+.form {
+  grid-area: form;
+}
+
+.fb {
+  grid-area: fb;
+}
+
+.twitter {
+  grid-area: twitter;
+}
+
+.youtube {
+  grid-area: youtube;
+}
+
+.ig {
+  grid-area: ig;
+}
+
+label {
+  display: block;
+  color: #6db93a;
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  display: block;
+  margin-bottom: 10px;
+  border: 1px solid #6db93a;
+  border-radius: 5px;
+  padding: 15px 8px;
+  background-color: ghostwhite;
+  width: 100%;
+}
+
+.fb > span,
+.twitter > span,
+.youtube > span,
+.ig > span {
+  text-align: center;
+  position: relative;
+  top: 40%;
+}
+
+footer {
+  background-color: ghostwhite;
+  color: #6db93a;
+  padding: 10px;
+  text-align: right;
+  box-shadow: 0px 2px 7px #6db93a;
+  margin-top: 15px;
+}
+
+footer > div > a,
+footer > div > address {
+  color: #6db93a;
+  text-decoration: none;
+  padding: 0 10px;
+}

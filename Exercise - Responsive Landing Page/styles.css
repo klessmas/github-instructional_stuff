@@ -1,0 +1,263 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #bababa;
+}
+
+.body {
+  display: grid;
+}
+
+.header {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  justify-items: center;
+  background-color: #0f2cd2;
+  color: #dedede;
+}
+
+.header h2 {
+  margin: 0;
+  padding: 30px 0px 10px 0px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.header p {
+  margin: 0;
+  padding: 10px 15px 10px 15px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.header button {
+  width: 5rem;
+  height: 2rem;
+  font-size: 12px;
+  border: 0;
+  border-radius: 5px;
+  margin: 15px 0px 30px 0px;
+  background-color: #dedede;
+}
+
+.header button a {
+  text-decoration: none;
+  color: black;
+}
+
+.describe {
+  width: 80%;
+  display: grid;
+  margin: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  justify-items: center;
+  background-color: #bababa;
+}
+
+.describe h3 {
+  margin: 20px 0px 20px 0px;
+  grid-column: 1 / -1;
+}
+
+.one,
+.two {
+  width: 300px;
+}
+
+.cards {
+  padding: 30px 0px 30px 0px;
+  display: grid;
+  margin: auto;
+  grid-gap: 10px;
+  width: 60%;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #bababa;
+  justify-items: center;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  padding: 0;
+  margin: 0;
+  height: 300px;
+  width: 200px;
+  background-color: #0f2cd2;
+  border-radius: 5px;
+  color: ghostwhite;
+  font-size: 14px;
+  text-align: center;
+}
+
+.card-1-img,
+.card-2-img,
+.card-3-img {
+  background-color: ghostwhite;
+  height: 100px;
+  border: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card-1 p,
+.card-2 p,
+.card-3 p,
+.card-1 h4,
+.card-2 h4,
+.card-3 h4 {
+  padding: 10px 10px 10px 10px;
+}
+
+.rec img {
+  height: 100px;
+  width: 195px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: black;
+  background-color: ghostwhite;
+}
+
+.middle {
+  width: 100%;
+  padding: 30px 0px 30px 0px;
+  display: grid;
+  margin: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  justify-items: center;
+  background-color: ghostwhite;
+}
+
+.middle h3 {
+  margin: 20px 0px 20px 0px;
+  grid-column: 1 / -1;
+}
+
+.mid_one,
+.mid_two {
+  width: 300px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer .foot_left,
+.footer .foot_right {
+  text-align: center;
+  font-size: 12px;
+  padding: 20px 50px 20px 50px;
+}
+
+.footer .foot_left {
+  background-color: #0f2cd2;
+  color: ghostwhite;
+}
+
+.foot_left h5,
+.foot_right h5 {
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  .header {
+    display: grid;
+    margin: auto;
+    padding: 0;
+    padding-left: 18px;
+    width: 100%;
+    justify-items: left;
+    text-align: left;
+    background-color: #0f2cd2;
+    color: #dedede;
+  }
+
+  .header p {
+    inline-size: 400px;
+    text-align: left;
+    justify-items: left;
+    padding-left: 0px;
+  }
+
+  .describe {
+    width: 100%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr;
+    padding-left: 18px;
+    justify-items: left;
+    text-align: left;
+    background-color: #bababa;
+  }
+
+  .describe h3 {
+    margin: 10px 0px 5px 0px;
+    justify-items: start;
+  }
+  .cards {
+    display: grid;
+    margin: 0px 0px 0px 18px;
+    grid-template-areas:
+      "one"
+      "two"
+      "three";
+    justify-content: left;
+  }
+
+  .card-1 {
+    grid-area: one;
+  }
+
+  .card-2 {
+    grid-area: two;
+  }
+
+  .card-3 {
+    grid-area: three;
+  }
+
+  .middle {
+    width: 100%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr;
+    padding-left: 18px;
+    justify-items: left;
+    text-align: left;
+    background-color: #ghostwhite;
+  }
+
+  .footer {
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+      "left"
+      "right";
+    text-align: left;
+  }
+
+  .footer .foot_left,
+  .footer .foot_right {
+    text-align: left;
+    font-size: 12px;
+    padding: 10px 18px 10px 18px;
+  }
+
+  .footer{
+      background-color: #0f2cd2;
+  }
+
+  .foot_left {
+    grid-area: left;
+  }
+
+  .foot_right {
+    grid-area: right;
+    color: ghostwhite;
+  }
+}

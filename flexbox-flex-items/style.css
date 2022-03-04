@@ -1,0 +1,53 @@
+/* the order property is a flex property that allows 
+rearranging the elements in the DOM
+
+it works really well if you have two elements 
+if you have more than two, it will need more
+specificity to place them correctly*/
+
+/*the flex property has 3 different types, and
+can be combined into a shorthand 
+
+-flex-grow: it will take a unit-less value
+   -it will dictate how much of the available space in the
+   container that element will take up, reference the other elements
+   and their grow values (e.g. a 2 will be twice the space of a 1)
+-flex-shrink will define the element's ability to shrink ref the other items
+if necessary  
+-flex-basis defines the width in px, rem, %, but it defines it in 
+the flex-box way
+ it allows things to adjust properly, especially if you use % 
+ and it is preferred to
+ using % outside of flex- it will respond much better 
+-shorthand is RECOMMENDED "flex: (grow, shrink, basis) second 2 
+are optional*/
+
+
+.box {
+  display: flex;
+  border: 2px solid rgb(96, 139, 168);
+}
+
+.box div {
+  height: 100px;
+  border: 2px solid rgb(96, 139, 168);
+  border-radius: 5px;
+  background-color: rgba(96, 139, 168, 0.2);
+}
+
+.one {
+  order: 4;
+  flex-shrink: 1;
+}
+.two {
+  order: 2;
+  flex-grow: 3;
+}
+.three {
+  order: 3;
+  flex-basis: 60%;
+}
+.four {
+  order: 1;
+  flex: 1;
+}

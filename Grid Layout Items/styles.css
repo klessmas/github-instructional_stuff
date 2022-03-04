@@ -1,0 +1,116 @@
+.container {
+  color: ghostwhite;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  place-items: stretch;
+  justify-content: stretch;
+}
+
+div div {
+  color: ghostwhite;
+  border: 1px transparent darkgray;
+}
+
+.container-2 {
+  color: ghostwhite;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+  place-items: stretch;
+  justify-content: stretch;
+}
+
+.container-3 {
+  color: ghostwhite;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+  place-items: stretch;
+  justify-content: stretch;
+}
+
+.container .header {
+  grid-column-start: 1;
+  /* the number is what line, (not column)
+  you want to start/end on */
+  grid-column-end: 5;
+  /* these are shorthand 
+  grid-column: 1 / 4;
+  ("span" means how many columns or rows wide you 
+  want to use, instead of indicating an ending line)
+  grid-column: 1 / span 3;
+   */
+  /* This is a trick I made for the mytube style.
+   position: fixed;
+   top: 0%;
+   left: 0%;
+   width: 100%; */
+}
+
+.container-2 .header {
+  /* you can also use shorthand like the column 
+  example in .container .header */
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column: 1 / 4;
+  grid-row: 2 / 4;
+}
+
+.container-3 .header {
+  /* you can also use shorthand like the column 
+  example in .container .header */
+  /* grid-row-start: 1;
+  grid-row-end: 4; */
+  grid-column: 1 / 5;
+}
+
+.container-3 .main {
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 3;
+  justify-self: start;
+  align-self: center;
+  /* "place self is shorthand for justify-self and
+  align self together, vertical and horizontal */
+  place-self: end center;
+}
+
+.container-3 .sidebar {
+  grid-row: 2 / span 2;
+  grid-column: 4 / 5;
+}
+
+.container-3 .footer {
+  grid-column: 1 / 5;
+}
+
+.header {
+  background-color: yellowgreen;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.main {
+  background-color: orange;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.sidebar {
+  background-color: firebrick;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.footer {
+  background-color: cornflowerblue;
+  border-radius: 5px;
+  text-align: center;
+}
